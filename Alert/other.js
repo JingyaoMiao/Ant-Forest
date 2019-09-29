@@ -5,6 +5,7 @@
  * @Parry
  */
 
+Alert.alert(
     'Title of Alert',
     'Content of Alert',
     [
