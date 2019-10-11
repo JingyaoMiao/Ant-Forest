@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>This is the home page of the app.</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+        div.header
+        {
+          background-color:#C2F6C4;
+          max-width: 100%;
+          font-size: 150%;
+          border: 1px solid #000000;
+        }
+        div.button
+        {
+          background-color:#FFFAC0;
+          max-width: 100;
+        }
+        div.news
+        {
+          background-color:#BCF1F1;
+          width: 300px;
+          height: 300px;
+          position: relative;
+          top: 10px;
+          right: -220px;
+          border: 2px solid #000000;
+          
+        }
+        div.special
+        {
+          background-color:#BCF1F1;
+          width: 850px;
+          height: 450px;
+          position: relative;
+          top: -280px;
+          right: -500px;
+          border: 2px solid #000000;
+        }
+        div.tips
+        {
+          background-color:#BCF1F1;
+          width: 300px;
+          height: 300px;
+          position: relative;
+          top: -550px;
+          right: -1200px;
+          border: 2px solid #000000;
+        }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+        a:link, a:visited
+        {          
+          background-color: #F6634F;
+          color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        a:hover, a:active
+        {
+          background-color: #FDA89C;
+        }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class = "header">
+    <header>
+    <h1 style="font-family:monospace"><center>Welcome to Ant-Forest</center></h1>
+    <center><img src="3.png" width="220" height="240"></img></center>
+    </header>
+    </div>
+    <div class = "button">
+    <nav><center>
+        <a href= "Trees.html">View Trees</a>
+        <a href= "cart.html">My Cart</a>
+        <a href="profile.html">My Profile</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        </center>
+      </nav>
+      </div>
+      <div class = "news">
+      <h1 style="font-family:monospace"><center>News this week!</center></h1>
+      <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ Trees are the new gravestones in Silicon Valley.</p>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ Planting billions of trees is most effective climate change solution.</p>
+      <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ Tree rings reveal climate change past and present.</p>
+      </div>
+      <div class = "special">
+      <h1 style="font-family:monospace"><center>Trees on special!</center></h1>
+      <img src="2.png" width="220" height="240"></img>
+      <img src="4.png" width="220" height="240"></img>
+      <img src="7.png" width="220" height="240"></img>
+      <h1 style="font-family: monospace;">Buy 1 get 1 free for any of these trees!</h1>
+      </div>
+      <div class = "tips">
+      <h1 style="font-family:monospace"><center>Some tips for you!</center></h1>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ Plant small trees (that reach 30 feet tall or less) at least 10 feet from your home’s foundation and utility lines.</p>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ Plant large trees (30 to 70 feet tall) at least 15 feet from foundations and lines.</p>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">♦ give 70-foot trees 20 feet of distance.</p>
+      </div>
   </body>
 </html>
